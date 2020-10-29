@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 30rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    padding: 0rem 5rem;
+}
+
+.sneakers {
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sneakers img {
+    width: 12rem;
+    z-index: 2;
+    transition: all 0.5s ease-out;
+}
+
+.circle {
+    width: 8rem;
+    height: 8rem;
+    background: linear-gradient(to right, rgb(248, 18, 18, 0.75), rgb(36, 145, 189));
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+.info h1 {
+    font-size: 2.2rem;
+    margin-top: 1rem;
+    transition: all 0.75s ease-out;
+}
+
+.info h3 {
+    font-size: 1.3rem;
+    padding: 0.6rem 0rem;
+    font-weight: lighter;
+    color: rgb(88, 85, 85);
+    transition: all 0.75s ease-out;
+}
+
+.sizes {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.5s ease-out;
+}
+
+.sizes button {
+    padding: 0.5rem 1.5rem;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(102, 95, 95);
+    transition: all 0.5s ease-out;
+}
+
+button.active {
+    background-color: rgb(102, 95, 95);
+    color: white;
+}
+
+.purchase {
+    margin-top: 2.5rem;
+    transition: all 0.75s ease-out;
+}
+
+.purchase button {
+    width: 100%;
+    padding: 0.78rem;
+    background: rgb(255, 23, 23);
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 1rem;
+    color:white;
+    transition: all 0.75s ease-out;
+}
